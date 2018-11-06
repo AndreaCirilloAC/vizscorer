@@ -7,7 +7,7 @@
 #' To provide more relevant information to the user a set of advices are retrieved from a built-in knowledge base, selecting only those relevant to suboptimal areas of the plot, observed from metadata.
 #' Finally a revealjs deck of slides is programmatically created leveraging a quasi-real natural language generation algorithm.
 #' @return a reveljs deck of slide containing an evaluation of the effectiveness of ggplot objects and suggestion about how to improve it.
-
+#' @export
 scorer_bot <- function(plot_object = NULL){
  plot_metadata_raw <- metadata_reader(plot_object) %>% as.data.frame()
  plot_metadata <- data.frame(area_label = unlist(plot_metadata_raw$area_label),
