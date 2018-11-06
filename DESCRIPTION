@@ -1,0 +1,14 @@
+Package: vizscorer
+Type: Package
+Title: An intelligent advisor for your dataviz
+Version: 0.1.0
+Author: Andrea Cirillo
+Maintainer: Andrea Cirillo <me@andreacirillo.com>
+Description: vizscorer analyses yout ggplot plot object and provides you customised advices on how
+        how to improve it. The analysis is performed applying machine learning to your plot metadata and results
+        in a customised report.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2 , cluster, dplyr , energy , caret , tidyr , knitr , revealjs
+RoxygenNote: 6.0.1

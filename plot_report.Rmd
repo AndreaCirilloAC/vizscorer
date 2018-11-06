@@ -1,0 +1,150 @@
+---
+title: "Your Plot Meta Analysis"
+output:
+  revealjs::revealjs_presentation:
+    center: true
+    transition: fade
+    theme: serif
+---
+<!-- custom CSS code for blinking cursor -->
+<style type="text/css">
+    .blinking-cursor {
+  font-weight: 100;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+  font-size: 100%
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+</style>
+
+Hi! I am you dataviz bot advisor<span class=blinking-cursor>_</span>
+
+---
+
+I have looked into your plot and evaluated it against dataviz best practices and theoretical frameworks<span class=blinking-cursor>_</span>
+
+---
+
+your plot looks  __`r judgment`__<span class=blinking-cursor>_</span>
+
+to be more precise your plot scored __`r round(score,2)`__
+
+
+---
+
+here it is a comparison between your score and the score obtained from plots included within the estimation database.
+
+```{r eval=TRUE, include=TRUE,echo=FALSE, fig.height=5,fig.width=7,5}
+
+score_plot
+
+```
+
+<small>you can find more info about how my scoring algorithm works on my <a hrefandreacirillo.com/viz_bot>official webpage</a></small>
+
+---
+
+let me tell you a bit more about this<span class=blinking-cursor>_</span>
+
+---
+
+as far as I can see the data viz area in which your plot scored worst was the __`r worst_area`__<span class=blinking-cursor>_</span>
+
+---
+
+here it is a summary of your plot performance for each area. 
+
+`r kable(positive_ratio_show)`
+
+you can look into my documentation to learn which test were performed and how the scores were computed.
+<small>you can also find more info about all on my <a hrefandreacirillo.com/viz_bot>official webpage</a></small>
+
+---
+
+is now time to learn how to make your plot more effective applying dataviz principles<span class=blinking-cursor>_</span>
+
+---
+
+I will give you an advice on how to fix your plot for each test failed<span class=blinking-cursor>_</span>
+ 
+ 
+---
+ 
+__you should highlight trends going on__
+  
+it seems a strong correlation is going on between your data. Try to help the reader of your plot spotting it adding <code>geom_smooth()</code> to your plot<span class=blinking-cursor>_</span>
+  
+---
+ 
+__try to remove the grey background__
+  
+you are employing the default ggplot theme. while it is generally fit for its purpose you should consider removing that grey background, which lowers your data to ink ratio. Please find more info about data ink ratio on the <a href='https://infovis-wiki.net/wiki/Data-Ink_Ratio'>official info vis wiki page</a><span class=blinking-cursor>_</span>
+  
+---
+ 
+__what is a book without a title?__
+  
+your plot is missing a title. this makes harder for your reader to understand its content. try to add a title employing <code>labs(title = 'relevant title')</code><span class=blinking-cursor>_</span>
+  
+---
+ 
+__let us understand your plot better with a subtitle__
+  
+ your plot is missing a subtitle. Subtitle are effective in providing additional relevant info about metrics and data showed in your plot.Try to add a plot employing labs(subtitle  = 'your subtitle')<span class=blinking-cursor>_</span>
+  
+---
+Hope you will find this useful and will help you improve your plot
+  
+Cheers,
+  
+_your dataviz bot advisor_
+  
