@@ -10,5 +10,5 @@ Description: vizscorer analyses yout ggplot plot object and provides you customi
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
-Imports: ggplot2 , cluster, dplyr , energy , caret , tidyr , knitr , revealjs
+Depends: ggplot2 , cluster, dplyr , energy , caret , tidyr , knitr , revealjs
 RoxygenNote: 6.0.1
