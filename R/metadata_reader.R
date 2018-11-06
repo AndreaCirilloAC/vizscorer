@@ -9,6 +9,7 @@
 #' The results of performed tests are stored in a structued list object, so to be provided as an input to a gradient boosting model.
 #' See \code{scorer} function documentation for more info about this subsequent step.
 #' @return a list storing results and additional data related to each test performed.
+#' @export
 metadata_reader <- function(plot_object = NULL){
 
   # preliminary chech on arguments of the function and others

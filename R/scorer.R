@@ -3,7 +3,7 @@
 #'As a result a 0 to 1 score is produced, measuring the effectiveness of the related plot based on a set of rules drawn from data visualization theory.
 #'@param plot_metadata a data frame storing ggplot object metadata, resulting from a previous call of \code{metadata_reader} function.
 #'@return a numeric value
-
+#' @export
 scorer <- function(plot_metadata = NULL){
 
   if(is.null(plot_metadata)){stop("you must provide a valid set of plot metadata to obtain a score")}else{

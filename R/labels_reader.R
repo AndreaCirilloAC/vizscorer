@@ -2,7 +2,7 @@
 #' @param plot_object the ggplot object being analysed
 #' @description this function match the labels of the given ggplot object against a set of predefined special characters
 #' @return a list storing test result and the list of special characters found within labels.
-
+#' @export
 labels_reader <- function(plot_object){
   labels_text_vector <- plot_object$labels %>% unlist() %>% as.vector()
   special_character_vector <- c("&","/","!","?","^","@","#","$","¶","§", ":)", ".")

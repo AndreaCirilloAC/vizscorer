@@ -3,6 +3,7 @@
 #' @param n_of_layers number of layers within the ggplot object
 #' @param required_aes the ggplot object aestetich required
 #' @return a vector containing values of the variable the required specified aestetich is mapped to
+#' @export
 aes_puller <- function(plot_object,n_of_layers, required_aes){
 
   aes_db     <- mappings_lister(plot_object , n_of_layers )

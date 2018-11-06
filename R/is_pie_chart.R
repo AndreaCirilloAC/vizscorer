@@ -3,7 +3,7 @@
 #' @param n_of_layers number of layers within the ggplot object
 #' @description to understand if aplot is a pie chart this functions look for the presence of a \code{geom_bar} layer and a \code{coord_polar} layer.
 #' @return TRUE if the plot is a pie chart and FALSE in the opposite case
-
+#' @export
 is_pie_chart <- function(plot_object, n_of_layers){
 
   coordinates_class <-   coordinates_lister(plot_object)

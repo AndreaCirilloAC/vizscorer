@@ -4,7 +4,7 @@
 #' @param overplotting_floor a custom threshold of distance among points to detect overplotting
 #' @param aes_db a data frame storing plot object aestetichs and variable mapped against them
 #' @return a list containing an overall test result with TRUE in presence of overplotting and the median distance observed between points
-
+#' @export
 cozy_plot <- function(plot_object, n_of_layers, overplotting_floor,aes_db){
 
 if (is.na(match("y",aes_db$aes))){ #if there is no y we are probably "looking" at an histogram, for which no overplotting check is provided

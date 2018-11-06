@@ -7,6 +7,7 @@
 #' A control is performed to exclude we are simply looking at a pie chart based on an intermediate \code{geom_bar} layer
 #' @references The Visual Display of Quantitative Information, E.R.Tufte, GRaphics Press . Cheshire, Connecticut
 #' @return returns TRUE when the barplot is composed of filled bars and FALSE in the opposite case.
+#' @export
 filled_barplot <- function(plot_object,n_of_layers){
 
 is_geom_bar <- test_for_geom_bar(plot_object,n_of_layers)

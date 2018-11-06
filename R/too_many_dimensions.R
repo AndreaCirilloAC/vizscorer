@@ -5,6 +5,7 @@
 #' This check is based on data visualization principle requesting that the number of dimension depicted should not be higher thant the number of dimension of the data.
 #' @references The Visual Display of Quantitative Information, E.R.Tufte, GRaphics Press . Cheshire, Connecticut
 #' @return TRUE if the plot contains too many dimension, FALSE in the opposite case.
+#' @export
 too_many_dimensions <- function(plot_object,n_of_layers){
 # we check here if there is a combination of geom_point/ geom_line and mapping = size
 

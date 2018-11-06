@@ -7,7 +7,7 @@
 #' if this threshold is breached and no \code{geom_smooth} is observed among ggplot objects layers a postive outcome is produced for the test.
 #' @return a list storing in two separate vectors the final result of the test and the observed distance correlation.
 #' the test outcome is TRUE in case a trend line is deemed necessary.
-
+#' @export
 does_it_need_geom_smooth <- function(plot_object, n_of_layers,correlation_threshold,aes_db){
 
   # first we check for correlations ( of any type) among points

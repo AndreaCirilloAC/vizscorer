@@ -2,7 +2,7 @@
 #' @param plot_object the ggplot object being analysed
 #' @param n_of_layers number of layers within the ggplot object
 #' @return a data frane storing for each aestetich the mapped variable
-#'
+#' @export
 mappings_lister <- function(plot_object,n_of_layers){
 
 

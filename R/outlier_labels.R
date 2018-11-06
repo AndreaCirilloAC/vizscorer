@@ -6,7 +6,7 @@
 #' @description for x and y variable the Tukey outlier rule is applied to evaluate the presence of outliers.
 #' If any outlier is identified one more check is performed to retrieve among plot metadata the presence of some annotation related to that data.
 #' @return a list storing a TRUE in case there are no outliers or the detected outliers are labelled and FALSE in the other cases.
-
+#' @export
 outlier_labels <- function(plot_object,n_of_layers,p_build,aes_db){
   #TRUE as final result means either you don't have outliers or the ones you have are labeled. the relevant result here is
   # FALSE since it discriminates between a good and a bad plot.

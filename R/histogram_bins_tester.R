@@ -5,7 +5,7 @@
 #' @description this function computes the optimal bins width based on the Freedman Diaconis rule and compares it against the actual bin width set within the ggplot object.
 #' @return an object storing the general test result, the optimal binwidth based on Freedman Diaconis and the distance of the actual binwidth from this measure.
 #' TRUE is produced as a result if the actual width is not optimal.
-
+#' @export
 histogram_bins_tester <- function(plot_object, n_of_layers, default_n_of_bins){
 # first of all I look for a GeomBar layer and a binwidth parameter. the occurence of
   # both means we are "looking" at an histogram ( there is no separate geom)

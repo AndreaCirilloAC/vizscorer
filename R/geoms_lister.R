@@ -2,6 +2,7 @@
 #' @param plot_object the ggplot object being analysed
 #' @param n_of_layers number of layers within the ggplot object
 #' @return a vector listing all geoms found within the given ggplot object
+#' @export
 geoms_lister <- function(plot_object, n_of_layers){
   geoms_in_plot <- c()
   for (i in 1:n_of_layers) {

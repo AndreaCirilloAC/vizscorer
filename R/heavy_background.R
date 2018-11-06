@@ -5,6 +5,7 @@
 #' Lower values of this ratio are related to non-effective plots.
 #' @references The Visual Display of Quantitative Information, E.R.Tufte, GRaphics Press . Cheshire, Connecticut
 #' @return returns TRUE if the plot is depicted on an heavy background, FALSE if the background is white or transparent
+#' @export
 heavy_background <- function(plot_object){
   # we check here if the default background is being used AND
   # if the default background is still the grey one
