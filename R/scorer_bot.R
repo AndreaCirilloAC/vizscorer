@@ -17,7 +17,7 @@ scorer_bot <- function(plot_object = NULL){
 
   score <- scorer(plot_metadata)
   score_db <- data.frame("good"=score,"count"=1)
-  comparison_path <- system.file("extdata", "comparison_db.csv", package = "vizscrorer")
+  comparison_path <- system.file("extdata", "comparison_db.csv", package = "vizscorer")
   comparison_db <- read.csv(comparison_path, sep = ",", stringsAsFactors = FALSE) %>%
     select(good,model)
 
@@ -85,14 +85,14 @@ scorer_bot <- function(plot_object = NULL){
     filter(ispositive == FALSE) -> errors_db
 
   # merge errors_db with a db storing a suggestion for each possible error
-  advices_path <- system.file("extdata", "plot_advices.csv", package = "vizscrorer")
+  advices_path <- system.file("extdata", "plot_advices.csv", package = "vizscorer")
   advices_db <- read.csv(advices_path, sep = ";", stringsAsFactors = FALSE)
 
   errors_db %>%
     left_join(.,advices_db,by = "topic_label") -> teaching_db
 
 n_of_errors <- nrow(errors_db)
-report_path <- system.file("extdata", "report.Rmd", package = "vizscrorer")
+report_path <- system.file("extdata", "report.Rmd", package = "vizscorer")
 file.copy(report_path, to = "plot_report.Rmd",overwrite = TRUE)
 write(" ", file = "plot_report.Rmd", append = TRUE)
 for (i in 1:n_of_errors){

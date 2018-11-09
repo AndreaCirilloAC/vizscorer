@@ -39,7 +39,7 @@ if(is.na(x_vector)|is.character(x_vector)){x_outliers_are_labelled <- NA}else{
 
 ########### y
 
-  if(is.na(y_vector)|is.character(x_vector)){y_outliers_are_labelled <- NA}else{
+  if(is.na(y_vector)|is.character(x_vector)){ y_outliers_are_labelled <- NA}else{
 
   # look for outliers
 
