@@ -23,4 +23,10 @@ Vizscorer continues the effort started with [paletteR](https://github.com/Andrea
 
 ### Disclaimer
 
-vizscorer is currently in beta mode and every feedback and support from early adopters is more than welcome :)
+**vizscorer is currently in beta mode and every feedback and support from early adopters is more than welcome :)**
+
+### further area of development
+
+- increasing the number of plots employed for training the gradient boosting model
+- introducing a “console version” of the report, more usable and less annoying in the long run
+- increasing the level of cleaverness of the bot to make it able to analyse more complex plots and provide even more useful suggestions
