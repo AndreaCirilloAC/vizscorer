@@ -535,7 +535,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section>
 <section class="slide level2">
 
-<p>as far as I can see the data viz area in which your plot scored worst was the <strong>adequateness of labeling</strong><span class="blinking-cursor">_</span></p>
+<p>as far as I can see the data viz area in which your plot scored worst was the <strong>data to ink ratio</strong><span class="blinking-cursor">_</span></p>
 </section>
 <section class="slide level2">
 
@@ -552,27 +552,27 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">adequateness of labeling</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0.4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0.80</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">data density</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
-<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">1.00</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">data to ink ratio</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
-<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">0.50</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">readability of the plot</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.75</td>
 </tr>
 </tbody>
 </table>
@@ -588,23 +588,18 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section>
 <section class="slide level2">
 
+<p><strong>you should highlight trends going on</strong></p>
+<p>it seems a strong correlation is going on between your data. Try to help the reader of your plot spotting it adding <code>geom_smooth()</code> to your plot<span class="blinking-cursor">_</span></p>
+</section>
+<section class="slide level2">
+
 <p><strong>try to remove the grey background</strong></p>
 <p>you are employing the default ggplot theme. while it is generally fit for its purpose you should consider removing that grey background, which lowers your data to ink ratio. Please find more info about data ink ratio on the <a href="https://infovis-wiki.net/wiki/Data-Ink_Ratio">official info vis wiki page</a><span class="blinking-cursor">_</span></p>
 </section>
 <section class="slide level2">
 
-<p><strong>what is a book without a title?</strong></p>
-<p>your plot is missing a title. this makes harder for your reader to understand its content. try to add a title employing <code>labs(title = ‘relevant title’)</code><span class="blinking-cursor">_</span></p>
-</section>
-<section class="slide level2">
-
-<p><strong>let us understand your plot better with a subtitle</strong></p>
-<p>your plot is missing a subtitle. Subtitle are effective in providing additional relevant info about metrics and data showed in your plot.Try to add a plot employing labs(subtitle = ‘your subtitle’)<span class="blinking-cursor">_</span></p>
-</section>
-<section class="slide level2">
-
-<p><strong>use caption to add integrity to your plot</strong></p>
-<p>your plot is missing a caption. While not mandatories , captions are used to provide info about sources and reference period of your plot. This is crucial to increase the level of graphical integrity of your plot<span class="blinking-cursor">_</span></p>
+<p><strong>mark that outliers</strong></p>
+<p>I have found some outliers in your data ,and they do not seem to be explicitly labeled in your plot.To increase the level of meaningfulness you should consider labelling them<span class="blinking-cursor">_</span></p>
 </section>
 <section class="slide level2">
 
