@@ -26,7 +26,7 @@ Vizscorer continues the effort started with [paletteR](https://github.com/Andrea
 install vizscorer package:
 
 <code>
-devtools::install_github("andracirilloac/vizscorer")
+devtools::install_github("AndreaCirilloAC/vizscorer")
 </code>
 
 call the scorer_bot on your ggplot plot:
