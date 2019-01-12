@@ -131,6 +131,18 @@ you are employing the default ggplot theme. while it is generally fit for its pu
   
 ---
  
+__let us understand your plot better with a subtitle__
+  
+ your plot is missing a subtitle. Subtitle are effective in providing additional relevant info about metrics and data showed in your plot.Try to add a plot employing labs(subtitle  = 'your subtitle')<span class=blinking-cursor>_</span>
+  
+---
+ 
+__use caption to add integrity to your plot__
+  
+your plot is missing a caption. While not mandatories , captions are used to provide info about sources and reference period of your plot. This is crucial to increase the level of graphical integrity of your plot<span class=blinking-cursor>_</span>
+  
+---
+ 
 __mark that outliers__
   
 I have found some outliers in your data  ,and they do not seem to be explicitly labeled in your plot.To increase the level of meaningfulness you should consider labelling them<span class=blinking-cursor>_</span>

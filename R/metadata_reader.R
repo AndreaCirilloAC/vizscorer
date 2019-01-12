@@ -22,6 +22,16 @@ metadata_reader <- function(plot_object = NULL){
   if(is.null(plot_object$data[1])){
     stop("current version only checks on data provided within ggplot call")
   }
+  # we have to be sure x aestetich is not named "x" and the same for y. Otherwise the introduced check for
+  # inherited aestetichs (cfr. mapplings_lister) would produce the removal of the right occurence of
+  if(plot_object$mapping %>%
+     unlist() %>%
+     as.character() %>%
+     match("y") %>%
+     sum(na.rm = TRUE) != 0 |
+     plot_object$mapping %>% unlist() %>% as.character() %>% match("y") %>% sum(na.rm = TRUE)!=0){
+    stop("it seems you have columns named 'x' or 'y' within the db you provided. This is not safe for some of the check performed. Go and change this, then come back and try again.")
+  }
   n_of_layers <-  plot_object$layers %>% length()
   # no overplotting check for histograms ( and generally where no y is provided)
     if(test_for_histogram(plot_object,n_of_layers) == TRUE){
